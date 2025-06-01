@@ -1,0 +1,30 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure root isn't centering or constraining layout */
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Stick nav bar to top */
+.atlaskit-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Push main content below the nav bar */
+main {
+  padding: 2rem;
+  margin-top: 56px; /* Adjust depending on nav height */
+}
