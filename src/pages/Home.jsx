@@ -90,6 +90,11 @@ const Home = () => {
             { label: "A+", value: "A+" },
             { label: "B+", value: "B+" },
             { label: "O+", value: "O+" },
+            { label: "AB+", value: "AB+" },
+            { label: "A-", value: "A-" },
+            { label: "B-", value: "B-" },
+            { label: "O-", value: "O-" },
+            { label: "AB-", value: "AB-" },
           ]}
           placeholder="Select Blood Group"
           onChange={(e) => setBloodGroupFilter(e?.value || "")}
