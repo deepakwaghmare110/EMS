@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { lazy, useCallback, useState } from "react";
 import { useFetchEmployees } from "../hooks/useFetchEmployees";
 import Table, { Cell, HeadCell, Row, TBody, THead } from "@atlaskit/table";
 import Button from "@atlaskit/button/new";
@@ -107,6 +107,59 @@ const Home = () => {
             { label: "Harvard University", value: "Harvard University" },
             { label: "MIT", value: "MIT" },
             { label: "Stanford University", value: "Stanford University" },
+            {
+              label: "University of Wisconsin--Madison",
+              value: "University of Wisconsin--Madison",
+            },
+            { label: "Ohio State University", value: "Ohio State University" },
+            { label: "Pepperdine University", value: "Pepperdine University" },
+            {
+              label: "University of Southern California",
+              value: "University of Southern California",
+            },
+            {
+              label: "Northeastern University",
+              value: "Northeastern University",
+            },
+            {
+              label: "University of North Carolina--Chapel Hill",
+              value: "University of North Carolina--Chapel Hill",
+            },
+            {
+              label: "University of Illinois--Urbana-Champaign",
+              value: "University of Illinois--Urbana-Champaign",
+            },
+            { label: "Syracuse University", value: "Syracuse University" },
+            {
+              label: "California Institute of Technology (Caltech)",
+              value: "California Institute of Technology (Caltech)",
+            },
+            { label: "William & Mary", value: "William & Mary" },
+            {
+              label: "New York University (NYU)",
+              value: "New York University (NYU)",
+            },
+            { label: "Tufts University", value: "Tufts University" },
+            {
+              label: "Washington University in St. Louis",
+              value: "Washington University in St. Louis",
+            },
+            {
+              label: "University of Illinois--Urbana-Champaign",
+              value: "University of Illinois--Urbana-Champaign",
+            },
+            {
+              label: "University of Pennsylvania",
+              value: "University of Pennsylvania",
+            },
+            { label: "Georgetown University", value: "Georgetown University" },
+            { label: "Syracuse University", value: "Syracuse University" },
+            { label: "Columbia University", value: "Columbia University" },
+            { label: "Boston College", value: "Boston College" },
+            {
+              label: "Johns Hopkins University",
+              value: "Johns Hopkins University",
+            },
           ]}
           placeholder="Select University"
           onChange={(e) => setUniversityFilter(e?.value || "")}
