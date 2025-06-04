@@ -1,14 +1,13 @@
-// src/components/EmployeeModal.js
-import React from 'react';
+import React from "react";
 import Modal, {
   ModalBody,
   ModalFooter,
   ModalHeader,
   ModalTitle,
   ModalTransition,
-} from '@atlaskit/modal-dialog';
-import Button from '@atlaskit/button/new';
-import { useShortlist } from '../context/ShortlistContext';
+} from "@atlaskit/modal-dialog";
+import Button from "@atlaskit/button/new";
+import { useShortlist } from "../context/ShortlistContext";
 
 const EmployeeModal = ({ isOpen, employee, onClose }) => {
   const { addToShortlist } = useShortlist();
@@ -17,7 +16,7 @@ const EmployeeModal = ({ isOpen, employee, onClose }) => {
 
   const handleShortlist = () => {
     addToShortlist(employee);
-    onClose(); 
+    onClose();
   };
 
   return (
@@ -29,12 +28,24 @@ const EmployeeModal = ({ isOpen, employee, onClose }) => {
           </ModalTitle>
         </ModalHeader>
         <ModalBody>
-          <p><strong>Email:</strong> {employee.email}</p>
-          <p><strong>Phone:</strong> {employee.phone}</p>
-          <p><strong>Blood Group:</strong> {employee.bloodGroup}</p>
-          <p><strong>Company:</strong> {employee.company?.name}</p>
-          <p><strong>Address:</strong> {employee.address?.address}</p>
-          <p><strong>University:</strong> {employee.university}</p>
+          <p>
+            <strong>Email:</strong> {employee.email}
+          </p>
+          <p>
+            <strong>Phone:</strong> {employee.phone}
+          </p>
+          <p>
+            <strong>Blood Group:</strong> {employee.bloodGroup}
+          </p>
+          <p>
+            <strong>Company:</strong> {employee.company?.name}
+          </p>
+          <p>
+            <strong>Address:</strong> {employee.address?.address}
+          </p>
+          <p>
+            <strong>University:</strong> {employee.university}
+          </p>
         </ModalBody>
         <ModalFooter>
           <Button appearance="primary" onClick={handleShortlist}>
