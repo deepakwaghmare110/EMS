@@ -1,7 +1,6 @@
-// src/pages/Shortlisted.js
-import React from 'react';
-import { useShortlist } from '../context/ShortlistContext';
-import Table, { Cell, HeadCell, Row, TBody, THead } from '@atlaskit/table';
+import React from "react";
+import { useShortlist } from "../context/ShortlistContext";
+import Table, { Cell, HeadCell, Row, TBody, THead } from "@atlaskit/table";
 
 const Shortlisted = () => {
   const { shortlisted } = useShortlist();
